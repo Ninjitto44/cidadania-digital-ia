@@ -1,0 +1,122 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #1a2a3a;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#toggle-dark-mode {
+    background-color: #00bcd4;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Layout Principal usando Flexbox */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #1a2a3a;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-left: 20px;
+    line-height: 1.6;
+}
+
+/* Quiz */
+.quiz-btn {
+    background-color: #1a2a3a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 5px 0 0;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.quiz-btn:hover {
+    background-color: #00bcd4;
+}
+
+#resultado-quiz {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1a2a3a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+/* Modo Escuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode section {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 6px rgba(250,250,250,0.05);
+}
+
+body.dark-mode h2 {
+    color: #00bcd4;
+}
+
+/* Media Queries (Responsividade para Celular) */
+@media (max-width: 600px) {
+    main {
+        margin: 10px;
+        padding: 10px;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
